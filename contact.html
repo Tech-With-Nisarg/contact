@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible">
+   <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Responsive Form</title>
+   <style type="text/css" media="screen">
+   body{
+    padding: 0px;
+    margin: 0px;  
+    font-family: Arial, Helvetica, sans-serif;
+  
+   }   
+
+
+ .container{
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+    }
+    /* contact form css */
+
+
+    #contact-section{
+      background: #03BBF7;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100% ;
+      padding-bottom: 2%;
+    }
+
+    #contact-section .container h2{
+      text-align: center;
+       text-decoration: underline;
+        /* text-decoration-color:red; */
+        text-underline-position: under;
+        color: black;
+        letter-spacing: 2px;
+        font-size: xx-large;
+        font-weight: bolder;
+        
+    }
+
+    
+
+    #contact-section .container p{
+      text-align: center; 
+      width: 70%; 
+      margin-left: auto;
+       margin-right: auto; 
+       padding-bottom: 3%;
+       color: black;
+       letter-spacing:3px;
+       font-weight: bold;
+       font-size: large;
+    }
+
+    .contact-form i.fa{
+      /* color: red; */
+      /* color: #fff; */
+      font-size: 22px; 
+      padding: 3%;
+      background-color: none;
+      border-radius: 80%;
+      margin: 2%;
+      /* border: 2px solid #fff; */
+      cursor: pointer;
+      border:2px solid black;
+      color: black;
+    }
+
+     
+      .contact-form{
+        display: grid;
+        grid-template-columns: auto auto;
+         }
+      
+      .form-info{
+        font-size: 16px;
+        font-style: italic;
+        color: black;
+        letter-spacing: 2px;
+      }
+      input{
+        padding: 10px;
+        margin:10px;
+        width: 70%;
+        background-color: white;
+        color: black;
+        border: none;
+        outline:none;
+      }
+
+      input::placeholder{
+        color: black;
+      }
+    
+       textarea{
+      padding: 10px;
+      margin: 10px;     
+      width: 70%;
+      background-color: white;
+      color: black;
+      border: none;
+      outline:none;
+     }
+     textarea::placeholder{
+       color: black;
+     }
+     
+      
+    
+      .submit{
+      width: 40%;
+      background: none;
+      padding: 4px;
+      outline: none;
+       /* border: 1px solid #fff;
+      color: #fff; */
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 33px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-left: 3%;
+      border:2px solid black;
+      color: black;
+     }
+
+        /* media queries */
+    @media (max-width: 768px){
+
+ #contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      #contact-section .submit{
+
+        width: 60%;
+      }
+
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer{
+    width: 100%;
+    background: #000;
+    display: block;
+}
+.inner-footer{
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.footer-items{
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: #03BBF7;
+}
+h1{
+    padding: 10px 0;
+    font-size: 25px;
+    color: #fff;
+    text-transform: initial;
+}
+.footer-items p{
+    color:#03BBF7;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+
+}
+h2{
+    margin: 10px 0;
+    color:#03BBF7;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.border{
+    height: 2px;
+    width: 40px;
+    background: #A5C941;
+}
+ul.foot{
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+ul.foot a{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    transition: 0.5s;
+}
+ul.foot a:hover{
+    color: #03BBF7;
+}
+ul.foot li{
+    margin: 10px 0;
+    height: 25px;
+}
+li.foot1 i{
+    margin-right: 20px;
+}
+li.foot2 i{
+    margin-right: 20px;
+}
+.social-media{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.social-media a{
+    text-decoration: none;
+}
+.social-media i{
+    height: 15px;
+    width: 15px;
+    margin: 20px 5px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+.social-media i:hover{
+    background: #03BBF7;
+}
+.footer-bottom{
+    padding: 10px;
+    background: #000;
+    color: #FFF;
+    font-size: 12px;
+    width: 100%;
+}
+@media screen and (max-width: 1085px) {
+    .footer-items{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer-items{
+        width: 100%;
+    }
+}
+header{
+  position: relative;
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #004AAD;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  
+}
+.Channel{
+  color: #fff;
+  height: 60px;
+  font-size: 36px;
+  line-height: 60px;
+  padding: 0 20px;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  font-weight: bolder;
+  text-decoration: none;
+
+}
+nav{
+  float: right;
+}
+.clearfix{
+  clear: both;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+}
+nav ul li a.active , nav ul li a:hover{
+  background: #03BBF7;
+  transition: 0.5s;
+}
+@media (max-width: 1300px){
+  header{
+      margin: 20px;
+  }
+}
+@media (max-width: 1118px){
+  .menu-toggle{
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  float: right;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  }
+  .menu-toggle:before{
+      content: '\f0c9';
+      font-family: fontAwesome;
+      line-height: 40px;
+  }
+  .menu-toggle.active:before{
+      content: '\f00d';
+  }
+  nav{
+      display: none;
+  }
+  nav.active{
+      display: block;
+      width: 100%;
+  }
+  nav.active ul{
+      display: block;
+  }
+  nav.active ul li a{
+      margin: 0;
+      height: 50px;
+  }
+}
+</style>
+
+    </head>
+     <body img src="contact.jpg">
+      <header>
+        <a href="#" class="Channel">Tech With Nisarg</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="E:\Tech-With-Nisarg/TechWithNisarg.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tech Videos</a></li>
+                <li><a href="#">Coding Videos</a></li>
+                <li><a href="E:\contact/contact.html" class="active">Contact Us</a></li>
+
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+   <!-- contact section -->
+         <section id="contact-section">
+           <div class="container">
+           	 <h2>Contact Us</h2>
+              <p>Email us and keep upto date with our latest news</p>
+             <div class="contact-form">
+
+                  <!-- First grid -->
+               <div>
+                 <i class="fa fa-map-marker"></i><span class="form-info">Kandivali, Mumbai, Maharashtra</span><br>
+                 <i class="fa fa-phone" > </i><span class="form-info">+91 937-211-5915</span><br>
+                 <i class="fa fa-envelope"></i><span class="form-info">nisarg933@gmail.com</span>
+               </div>
+               
+                   <!-- second grid -->
+           <div>        
+            <form action="messagesub.php" method="post">
+               <input type="text" name="name" placeholder="Your Name" required>
+               <input type="email" name="email" placeholder="Email" required><br>
+               <input type="number" name="phone" placeholder="Phone" required><br>
+               <input type="text" name="subject1" placeholder="Subject of this message" ><br>
+               <textarea name="message" placeholder="Message" rows="5" required></textarea><br>
+               <button class="submit" >Send Message</button> 
+             </form>   
+               </div>
+             </div>
+           </div>
+         </section>
+         <div class="footer">
+          <div class="inner-footer">
+              <div class="footer-items">
+                  <h1>Tech With Nisarg</h1>
+                  <p>
+                      My YouTube channel is 'Tech With Nisarg' . In this channel I give you all some tech tips and tricks .  I make videos on normal technology , crcked softwares , coding like HTML , CSS and javascript . I hope ypu watch my videos , like them and subscribe my channel .                </p>
+              </div>
+              <div class="footer-items">
+              <h2>Quick Links</h2>
+               <div class="border"></div>
+               <ul class="foot">
+                  <li><a href="E:\Tech-With-Nisarg/TechWithNisarg.html">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Tech Videos</a></li>
+                  <li><a href="#">Coding Videos</a></li>
+                  <li><a href="E:\contact/contact.html">Contact Us</a></li>
+               </ul>
+          </div>
+          <div class="footer-items">
+            <h2>Tutorials</h2>
+             <div class="border"></div>
+                <ul class="foot">
+                 <li>HTML/CSS</li>
+                  <li>Technology</li>
+                  <li>Javascript</li>
+                  <li>Crack Softwares</li>
+                </ul>
+                </div>
+     <div class="footer-items">
+       <h2>Contact Us</h2>
+        <div class="border"></div>
+        <ul class="foot">
+          <li class="foot1"><i class="fa fa-envelope" aria-hidden="true"></i>nisargshah933@gmail.com</li>
+          <li class="foot2"><i class="fa fa-phone" aria-hidden="true"></i>937-211-5915</li>
+        </ul>
+     
+         <div class="social-media">
+           <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  
+      </div>
+     </div>
+       <div class="footer-bottom">
+         Copyright &copy; Tech With Nisarg 2019 . All rights reserved .
+      </div>
+          
+  </div>
+  </div>
+
+         
+     </body>
